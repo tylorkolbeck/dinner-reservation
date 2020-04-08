@@ -1,11 +1,11 @@
 const path = require("path")
 const express = require("express")
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
-
 const app = express()
 const PORT = process.env.PORT || 3000
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 // Routes
 app.get("/", (req, res) => {
